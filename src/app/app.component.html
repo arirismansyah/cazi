@@ -1,0 +1,83 @@
+
+<main>
+
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <img src="../assets/logo_bps_sumsel.png" height="35" alt="">
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link" aria-current="page"><img src="../assets/logo_st.png" height="35" alt=""></a></li>
+      <li class="nav-item"><a href="#" class="nav-link"><img src="../assets/logo_sp.png" height="45" alt=""></a></li>
+      
+    </ul>
+  </header>
+
+  
+  
+  
+  <h1 class="mb-10">
+    <strong>Pendataan</strong>
+    <strong class="fst-italic"> Long Form </strong>
+    <strong>SP2020</strong>
+  </h1>
+
+  <div class="container-fluid mt-10">
+    <form>
+      <div class="form-group row">
+        <label for="name" class="col-sm-3 col-form-label text-start">Nama Lengkap :</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="name" #name placeholder="Nama Lengkap">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="wilayah" class="col-sm-3 col-form-label text-start">Wilayah Tempat Tinggal :</label>
+        <div class="col-sm-9">
+          <select class="form-control" id="wilayah" #wilayah>
+            <option value="" selected disabled>-- PILIH KAB/KOTA --</option>
+            <option value="1601">[1601] OGAN KOMERING ULU</option>
+            <option value="1602">[1602] OGAN KOMERING ILIR</option>
+            <option value="1603">[1603] MUARA ENIM</option>
+            <option value="1604">[1604] LAHAT</option>
+            <option value="1605">[1605] MUSI RAWAS</option>
+            <option value="1606">[1606] MUSI BANYUASIN</option>
+            <option value="1607">[1607] BANYUASIN</option>
+            <option value="1608">[1608] OGAN KOMERING ULU SELATAN</option>
+            <option value="1609">[1609] OGAN KOMERING ULU TIMUR</option>
+            <option value="1610">[1610] OGAN ILIR</option>
+            <option value="1611">[1611] EMPAT LAWANG</option>
+            <option value="1612">[1612] PALI</option>
+            <option value="1613">[1613] MUSI RAWAS UTARA</option>
+            <option value="1671">[1671] PALEMBANG</option>
+            <option value="1672">[1672] PRABUMULIH</option>
+            <option value="1673">[1673] PAGAR ALAM</option>
+            <option value="1674">[1674] LUBUKLINGGAU</option>
+            
+          </select>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  
+
+
+
+    <!-- For Component View -->
+  <div id="meetingSDKElement">
+    <!-- Zoom Meeting SDK Component View Rendered Here -->
+  </div>
+
+
+  <button (click)="getSignature(name.value, wilayah.value)">Ikuti Wawancara</button>
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Computer Aided Zoom Interviewing (CAZI)</a></li>  
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Powered By Zoom</a></li>  
+      </ul>
+      <p class="text-center text-muted">© 2022 Developed By IPDS BPS Provinsi Sumatera Selatan</p>
+    </footer>
+  </div>
+</main>
